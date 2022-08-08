@@ -1,0 +1,19 @@
+{
+    "nome": "Fulano da Silva",
+    "email": "belddddno@qa.com.br",
+    "password": "teste",
+    "endereco": {
+        "logradouro": "Rua dos Bobos",
+        "numero": "123",
+        "complemento": "Apto. 101",
+        "bairro": "Centro",
+        "cidade": "São Paulo",
+        "estado": "SP",
+        "cep": "01001000"
+    },
+    "administrador": "true",
+    "ativo":
+        {
+            "teste": "tabaco"
+        }
+}
