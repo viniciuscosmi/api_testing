@@ -26,9 +26,11 @@ def change_values_from_body(body, value):
     for k, v in body.items():
         if isinstance(v, dict):
             change_values_from_body(v, value)
+        elif isinstance(v, list):
+            change_values_from_body(v[0], value)
         else:
             initial_value = body[k]
-            body[k] = None
+            body[k] = value
             send_request()
             body[k] = initial_value
 
